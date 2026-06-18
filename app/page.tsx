@@ -334,7 +334,7 @@ export default function Home() {
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-4 text-cyan-400">Professional Summary</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Senior Cloud &amp; DevOps Engineer focused on building scalable, secure, and automated infrastructure for enterprise environments. Hands-on with AWS, Linux administration, scripting (Bash/Python), CI/CD pipelines, and database management.
+                        Cloud &amp; DevOps Engineer focused on building scalable, secure, and automated infrastructure for enterprise environments. Hands-on with AWS, Linux administration, scripting (Bash/Python), CI/CD pipelines, and database management.
                       </p>
                     </CardContent>
                   </Card>
