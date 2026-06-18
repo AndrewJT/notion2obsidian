@@ -28,40 +28,40 @@ export default function Home() {
 
   const experiences = [
     {
-      role: "Systems Engineer",
+      role: "Systems & DevOps Engineer",
       company: "Digitronica.it",
       location: "Verona, Italy",
-      period: "2024 - Present",
+      period: "2024 – Present",
       responsibilities: [
-        "Assisted with AWS services (EC2, S3, RDS) as part of infrastructure support",
-        "Administered Linux and Windows systems; implemented monitoring and automation",
-        "Automated maintenance tasks with Bash/Python scripts; backups and health checks",
-        "Configured VPNs (IPsec/SSL) and resolved complex network issues",
-        "Performed SQL troubleshooting across Oracle, MySQL and PostgreSQL",
+        "Architected multi-account AWS environments using AWS Organizations and IAM Identity Center, sustaining 99.9% availability for critical production workloads of Tier-1 clients including Ferrari, BNL Group, and Verona Airport.",
+        "Engineered scalable, reusable Infrastructure as Code (IaC) modules using Terraform to standardize and accelerate environment provisioning across multiple client projects.",
+        "Eliminated 40% of manual operational overhead by deploying custom Python and Bash self-healing automation frameworks for continuous monitoring, backup validation, and infrastructure tasks.",
+        "Designed secure hybrid-cloud networking architectures configuring resilient Site-to-Site IPsec VPNs and SSL VPNs connecting on-premise enterprise systems to AWS.",
+        "Led technical documentation and disaster recovery mapping, drastically reducing Mean Time to Resolution (MTTR) during incident responses.",
       ],
     },
     {
-      role: "Quality Assurance Engineer",
-      company: "Samsung Electronics",
-      location: "Verona, Italy",
-      period: "2022 - 2024",
+      role: "DevOps & QA Automation Engineer",
+      company: "Samsung Electronics (Akodis)",
+      location: "Verona/Milan, Italy",
+      period: "2023 – 2024",
       responsibilities: [
-        "Executed manual and automated testing for enterprise software systems",
-        "Backend validation using SQL; collaborated with DevOps teams",
-        "Developed QA frameworks and test plans improving product reliability",
-        "Tracked quality metrics to identify patterns and support development teams",
+        "Bridged Development and Operations by integrating automated regression and data-validation suites directly into Jenkins and GitHub Actions CI/CD pipelines, accelerating release velocity.",
+        "Designed complex backend validation scripts utilizing advanced SQL to audit data integrity, proactively identifying performance bottlenecks and architectural defects before production deployment.",
+        "Containerized testing dependencies with Docker, ensuring environment parity between development, staging, and production environments.",
+        "Collaborated on release readiness frameworks, providing actionable engineering insights that improved overall deployment stability and system reliability.",
       ],
     },
     {
-      role: "Functional Analyst",
-      company: "Intesa Sanpaolo",
-      location: "Verona/Padova, Italy",
-      period: "2019 - 2022",
+      role: "Functional Analyst & Deployment Specialist",
+      company: "Intesa Sanpaolo (Akodis)",
+      location: "Verona Area, Italy",
+      period: "2019 – 2023",
       responsibilities: [
-        "Supported deployments via Jenkins CI/CD pipelines",
-        "Managed production databases and automated environment setup",
-        "Designed data collection and processing pipelines for business intelligence",
-        "Analyzed complex business requirements translating them into technical specifications",
+        "Orchestrated end-to-end deployment workflows for core banking applications using Jenkins CI/CD pipelines, ensuring strict adherence to banking compliance and zero-downtime release strategies.",
+        "Managed high-availability production database operations (Oracle/SQL), leading critical migrations, data schema updates, and performance tuning for high-transaction banking systems.",
+        "Automated environment provisioning and pre-deployment configuration checks, drastically reducing delivery friction and cutting feature time-to-market.",
+        "Served as technical liaison coordinating between Dev, Operations, and Business stakeholders to manage controlled financial software rollouts and maintain service continuity.",
       ],
     },
   ]
@@ -143,18 +143,16 @@ export default function Home() {
     {
       title: "Kubernetes Fundamentals",
       issuer: "Self-Learning",
-      date: "In Progress",
+      date: "2024",
       description: "Container orchestration, deployments, services, and cluster management.",
       type: "learning",
-      inProgress: true,
     },
     {
-      title: "Terraform Basics",
+      title: "Terraform — Infrastructure as Code",
       issuer: "Self-Learning",
-      date: "In Progress",
-      description: "Infrastructure as Code fundamentals, AWS provider, state management.",
+      date: "2024",
+      description: "Infrastructure as Code fundamentals, AWS provider, reusable modules, and state management.",
       type: "learning",
-      inProgress: true,
     },
   ]
 
@@ -162,30 +160,30 @@ export default function Home() {
     { name: "Romanian", level: "Native", proficiency: 100 },
     { name: "Russian", level: "C2", proficiency: 100 },
     { name: "English", level: "C1", proficiency: 90 },
-    { name: "Italian", level: "B2", proficiency: 75 },
-    { name: "French", level: "A2", proficiency: 35 },
+    { name: "Italian", level: "C1", proficiency: 90 },
+    { name: "French", level: "B1", proficiency: 55 },
   ]
 
   const skillCategories = [
     {
       title: "DevOps & CI/CD",
       icon: Terminal,
-      skills: ["Jenkins", "Git", "GitLab CI", "GitHub Actions", "Docker", "Bash", "Python", "PowerShell"],
+      skills: ["Jenkins", "Git", "GitLab CI", "GitHub Actions", "Docker", "Kubernetes", "Amazon EKS", "Bash", "Python", "PowerShell"],
     },
     {
-      title: "Cloud Platforms",
+      title: "Cloud & IaC",
       icon: Cloud,
-      skills: ["AWS EC2", "AWS S3", "AWS RDS", "AWS IAM (basic)", "CloudWatch (basic)"],
+      skills: ["AWS VPC", "AWS EC2", "AWS S3", "AWS RDS", "AWS IAM Hardening", "AWS Organizations", "IAM Identity Center", "CloudWatch", "Lambda", "Terraform", "Ansible", "CloudFormation"],
     },
     {
       title: "Systems & Networking",
       icon: Server,
-      skills: ["Linux (Ubuntu/RHEL)", "Windows Server", "IPsec/SSL VPNs", "Network Troubleshooting"],
+      skills: ["Linux (RHEL/Ubuntu)", "Windows Server", "Site-to-Site IPsec VPNs", "SSL VPNs", "Cloud Routing", "Firewalls", "DNS"],
     },
     {
       title: "Databases",
       icon: Database,
-      skills: ["Oracle", "MySQL", "PostgreSQL", "SQL Optimization", "Backup & Recovery"],
+      skills: ["Oracle", "MySQL", "PostgreSQL", "SQL Performance Tuning", "High Availability (HA) Failover", "Backup & Recovery"],
     },
   ]
 
@@ -225,7 +223,7 @@ export default function Home() {
             </nav>
 
             <Button size="sm" className="hidden md:flex bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 border-0" asChild>
-              <a href="/Andrei_Ghenea_CV.pdf" download>
+              <a href="/ANDREI_GHENEA.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Resume
               </a>
@@ -253,7 +251,7 @@ export default function Home() {
                     </button>
                   ))}
                   <Button size="sm" className="mt-2 bg-gradient-to-r from-cyan-500 to-purple-600" asChild>
-                    <a href="/Andrei_Ghenea_CV.pdf" download>
+                    <a href="/ANDREI_GHENEA.pdf" download>
                       <Download className="mr-2 h-4 w-4" />
                       Resume
                     </a>
@@ -282,11 +280,10 @@ export default function Home() {
                     </span>
                   </h1>
                   <p className="mb-6 text-xl md:text-2xl font-medium bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                    DevOps Engineer | Cloud & Systems Automation
+                    DevOps &amp; Cloud Infrastructure Engineer
                   </p>
                   <p className="mb-8 text-muted-foreground max-w-2xl mx-auto text-lg">
-                    DevOps & Systems Engineer with 5+ years of experience in cloud infrastructure,
-                    automation, CI/CD and enterprise operations.
+                    Enterprise Infrastructure Automation Engineer with 6+ years of experience specializing in high-availability AWS deployments, modular Infrastructure as Code (Terraform), and robust CI/CD frameworks for Tier-1 enterprises.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
                     <Button onClick={() => handleScroll("contact")} className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 border-0">
@@ -366,10 +363,17 @@ export default function Home() {
                 <Card className="mt-8 bg-black/50 backdrop-blur-xl border-white/10">
                   <CardContent className="p-6">
                     <h3 className="text-lg font-semibold mb-4">Education</h3>
-                    <div className="p-4 rounded-lg bg-white/5 border border-white/10">
-                      <p className="font-medium">Informatics Diploma</p>
-                      <p className="text-sm text-muted-foreground">Finance and Banking College of Chisinau</p>
-                      <p className="text-xs text-cyan-400 mt-1">2014 - 2018</p>
+                    <div className="flex flex-col gap-3">
+                      <div className="p-4 rounded-lg bg-white/5 border border-white/10">
+                        <p className="font-medium">B.Sc. in Computer Science</p>
+                        <p className="text-sm text-muted-foreground">Università degli Studi di Verona</p>
+                        <p className="text-xs text-cyan-400 mt-1">2018 – 2022</p>
+                      </div>
+                      <div className="p-4 rounded-lg bg-white/5 border border-white/10">
+                        <p className="font-medium">Informatics Diploma</p>
+                        <p className="text-sm text-muted-foreground">Finance and Banking College of Chisinau</p>
+                        <p className="text-xs text-cyan-400 mt-1">2014 – 2018</p>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
