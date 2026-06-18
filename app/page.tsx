@@ -122,7 +122,7 @@ export default function Home() {
     {
       title: "AWS Certified Solutions Architect - Associate",
       issuer: "Amazon Web Services",
-      date: "Scheduled Q1 2026",
+      date: "2026",
       description: "Professional certification validating expertise in designing distributed systems on AWS.",
       type: "certification",
     },
