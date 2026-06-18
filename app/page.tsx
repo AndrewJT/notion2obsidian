@@ -68,6 +68,26 @@ export default function Home() {
 
   const projects = [
     {
+      title: "AWS Infrastructure Lab",
+      description: "Modular Terraform architecture for a highly available web application on AWS — VPC networking, EC2 provisioning with auto-scaling, RDS Multi-AZ, S3 lifecycle policies, and least-privilege IAM role management.",
+      images: [],
+      tags: ["AWS", "Terraform", "VPC", "EC2", "RDS", "IAM", "S3"],
+      link: "/projects/aws-lab",
+      liveUrl: null,
+      isLocalApp: false,
+      featured: true,
+    },
+    {
+      title: "CI/CD Pipeline Sandbox",
+      description: "End-to-end CI/CD pipeline built with GitHub Actions that automates testing, builds and pushes container images, and deploys to a local Kubernetes cluster (K3s) with automated security scanning and health checks.",
+      images: [],
+      tags: ["Docker", "GitHub Actions", "Kubernetes", "K3s", "CI/CD", "Bash", "Trivy"],
+      link: "/projects/cicd-sandbox",
+      liveUrl: null,
+      isLocalApp: false,
+      featured: true,
+    },
+    {
       title: "NetConnect Pro Console",
       description: "IT management desktop app for RDP connections, VPN client management, Identity Vault for credential storage, and system health monitoring dashboard.",
       images: [
@@ -79,7 +99,7 @@ export default function Home() {
       link: "/projects/netconnect-pro",
       liveUrl: null,
       isLocalApp: true,
-      featured: true,
+      featured: false,
     },
     {
       title: "Home Manager App",
@@ -94,39 +114,6 @@ export default function Home() {
       link: "/projects/home-management-app",
       liveUrl: "https://homehub.tapya.xyz",
       isLocalApp: false,
-      featured: true,
-    },
-    {
-      title: "Minesweeper Game",
-      description: "Modern implementation of the classic Minesweeper game with multiple difficulty levels (Easy, Medium, Hard), timer, flag counter, and responsive design.",
-      images: [
-        "/images/minesweeper-medium.png",
-        "/images/minesweeper-hard.png",
-      ],
-      tags: ["React", "TypeScript", "CSS", "Game Logic"],
-      link: "/projects/minesweeper-game",
-      liveUrl: "https://minesweeper.tapya.xyz",
-      isLocalApp: false,
-      featured: false,
-    },
-    {
-      title: "AWS Infrastructure Lab",
-      description: "Personal lab environment for practicing AWS services: VPC networking, EC2 provisioning, RDS setup, S3 lifecycle policies, and IAM role management using Terraform.",
-      images: [],
-      tags: ["AWS", "Terraform", "VPC", "EC2", "RDS", "IAM"],
-      link: "/projects/aws-lab",
-      liveUrl: null,
-      isLocalApp: false,
-      featured: false,
-    },
-    {
-      title: "CI/CD Pipeline Sandbox",
-      description: "Docker-based CI/CD pipeline using GitHub Actions for automated testing, building container images, and deploying to a staging environment with health checks.",
-      images: [],
-      tags: ["Docker", "GitHub Actions", "CI/CD", "Bash", "Nginx"],
-      link: "/projects/cicd-sandbox",
-      liveUrl: null,
-      isLocalApp: false,
       featured: false,
     },
   ]
@@ -138,7 +125,6 @@ export default function Home() {
       date: "Scheduled Q1 2026",
       description: "Professional certification validating expertise in designing distributed systems on AWS.",
       type: "certification",
-      inProgress: true,
     },
     {
       title: "Fundamentals of Database Engineering",
@@ -351,8 +337,7 @@ export default function Home() {
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-4 text-cyan-400">Professional Summary</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Hands-on with AWS, Linux administration, scripting (Bash/Python) and database management.
-                        Seeking a hybrid DevOps / SysAdmin role focused on reliability, automation and operational excellence.
+                        Senior Cloud &amp; DevOps Engineer focused on building scalable, secure, and automated infrastructure for enterprise environments. Hands-on with AWS, Linux administration, scripting (Bash/Python), CI/CD pipelines, and database management.
                       </p>
                     </CardContent>
                   </Card>
