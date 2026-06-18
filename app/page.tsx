@@ -230,9 +230,8 @@ export default function Home() {
                 <button
                   key={section}
                   onClick={() => handleScroll(section)}
-                  className={`text-sm font-medium transition-all hover:text-cyan-400 ${
-                    activeSection === section ? "text-cyan-400" : "text-muted-foreground"
-                  }`}
+                  className={`text-sm font-medium transition-all hover:text-cyan-400 ${activeSection === section ? "text-cyan-400" : "text-muted-foreground"
+                    }`}
                 >
                   {section === "hero" ? "Home" : section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -261,9 +260,8 @@ export default function Home() {
                     <button
                       key={section}
                       onClick={() => handleScroll(section)}
-                      className={`text-sm font-medium transition-colors hover:text-cyan-400 text-left ${
-                        activeSection === section ? "text-cyan-400" : "text-muted-foreground"
-                      }`}
+                      className={`text-sm font-medium transition-colors hover:text-cyan-400 text-left ${activeSection === section ? "text-cyan-400" : "text-muted-foreground"
+                        }`}
                     >
                       {section === "hero" ? "Home" : section.charAt(0).toUpperCase() + section.slice(1)}
                     </button>
@@ -301,7 +299,7 @@ export default function Home() {
                     DevOps Engineer | Cloud & Systems Automation
                   </p>
                   <p className="mb-8 text-muted-foreground max-w-2xl mx-auto text-lg">
-                    Mid-level DevOps & Systems Engineer with 5+ years of experience in cloud infrastructure, 
+                    DevOps & Systems Engineer with 5+ years of experience in cloud infrastructure,
                     automation, CI/CD and enterprise operations.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
@@ -347,18 +345,18 @@ export default function Home() {
               >
                 <h2 className="mb-4 text-3xl font-bold text-center">About Me</h2>
                 <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
-                
+
                 <div className="grid gap-8 md:grid-cols-2">
                   <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-4 text-cyan-400">Professional Summary</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Hands-on with AWS, Linux administration, scripting (Bash/Python) and database management. 
+                        Hands-on with AWS, Linux administration, scripting (Bash/Python) and database management.
                         Seeking a hybrid DevOps / SysAdmin role focused on reliability, automation and operational excellence.
                       </p>
                     </CardContent>
                   </Card>
-                  
+
                   <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-purple-500/30 transition-all">
                     <CardContent className="p-6">
                       <h3 className="text-lg font-semibold mb-4 text-purple-400">Quick Info</h3>
@@ -450,7 +448,7 @@ export default function Home() {
                       const yEnd = segmentHeight * (index + 1) + segmentHeight * 0.08
                       const xStart = isLeft ? "15%" : "85%"
                       const xEnd = index < experiences.length - 1 ? (nextIsLeft ? "15%" : "85%") : (isLeft ? "15%" : "85%")
-                      
+
                       return (
                         <line
                           key={index}
@@ -677,7 +675,7 @@ export default function Home() {
                             {/* Image Carousel or Icon Placeholder */}
                             {project.images.length > 0 ? (
                               <div className="p-2">
-                                <ImageCarousel 
+                                <ImageCarousel
                                   images={project.images}
                                   alt={project.title}
                                   autoPlayInterval={4000}
@@ -694,7 +692,7 @@ export default function Home() {
                                 </div>
                               </div>
                             )}
-                            
+
                             {/* Content */}
                             <div className="p-6 flex flex-col justify-center">
                               <div className="flex items-center gap-2 mb-2">
