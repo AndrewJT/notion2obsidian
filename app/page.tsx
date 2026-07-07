@@ -122,7 +122,7 @@ export default function Home() {
     {
       title: "AWS Certified Solutions Architect - Associate",
       issuer: "Amazon Web Services",
-      date: "Scheduled Q1 2026",
+      date: "2026",
       description: "Professional certification validating expertise in designing distributed systems on AWS.",
       type: "certification",
     },
@@ -326,22 +326,22 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-4xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">About Me</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">About Me</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 <div className="grid gap-8 md:grid-cols-2">
-                  <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all">
+                  <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors">
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-4 text-cyan-400">Professional Summary</h3>
+                      <h3 className="text-sm font-semibold mb-4 text-cyan-400 uppercase tracking-widest">Professional Summary</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Senior Cloud &amp; DevOps Engineer focused on building scalable, secure, and automated infrastructure for enterprise environments. Hands-on with AWS, Linux administration, scripting (Bash/Python), CI/CD pipelines, and database management.
+                        Cloud &amp; DevOps Engineer focused on building scalable, secure, and automated infrastructure for enterprise environments. Hands-on with AWS, Linux administration, scripting (Bash/Python), CI/CD pipelines, and database management.
                       </p>
                     </CardContent>
                   </Card>
 
-                  <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-purple-500/30 transition-all">
+                  <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors">
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-4 text-purple-400">Quick Info</h3>
+                      <h3 className="text-sm font-semibold mb-4 text-cyan-400 uppercase tracking-widest">Quick Info</h3>
                       <div className="space-y-3">
                         <div className="flex items-center gap-2 text-muted-foreground">
                           <MapPin className="h-4 w-4 text-cyan-400" />
@@ -360,28 +360,32 @@ export default function Home() {
                   </Card>
                 </div>
 
-                <Card className="mt-8 bg-black/50 backdrop-blur-xl border-white/10">
+                <Card className="mt-8 bg-card border-border">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-4">Education</h3>
+                    <h3 className="text-sm font-semibold mb-4 text-cyan-400 uppercase tracking-widest">Education</h3>
                     <div className="flex flex-col gap-3">
-                      <div className="p-4 rounded-lg bg-white/5 border border-white/10">
-                        <p className="font-medium">B.Sc. in Computer Science</p>
-                        <p className="text-sm text-muted-foreground">Università degli Studi di Verona</p>
-                        <p className="text-xs text-cyan-400 mt-1">2018 – 2022</p>
+                      <div className="flex items-start justify-between p-4 rounded-lg bg-secondary/50 border border-border">
+                        <div>
+                          <p className="font-semibold">B.Sc. in Computer Science</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">Università degli Studi di Verona</p>
+                        </div>
+                        <span className="text-xs text-cyan-400 shrink-0 ml-4 mt-0.5">2018 – 2022</span>
                       </div>
-                      <div className="p-4 rounded-lg bg-white/5 border border-white/10">
-                        <p className="font-medium">Informatics Diploma</p>
-                        <p className="text-sm text-muted-foreground">Finance and Banking College of Chisinau</p>
-                        <p className="text-xs text-cyan-400 mt-1">2014 – 2018</p>
+                      <div className="flex items-start justify-between p-4 rounded-lg bg-secondary/50 border border-border">
+                        <div>
+                          <p className="font-semibold">Informatics Diploma</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">Finance and Banking College of Chisinau</p>
+                        </div>
+                        <span className="text-xs text-cyan-400 shrink-0 ml-4 mt-0.5">2014 – 2018</span>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
 
                 {/* Languages */}
-                <Card className="mt-8 bg-black/50 backdrop-blur-xl border-white/10">
+                <Card className="mt-8 bg-card border-border">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-4">Languages</h3>
+                    <h3 className="text-sm font-semibold mb-4 text-cyan-400 uppercase tracking-widest">Languages</h3>
                     <div className="grid gap-3">
                       {languages.map((lang) => (
                         <div key={lang.name} className="flex items-center gap-4">
@@ -415,8 +419,8 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-5xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">Experience</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">Experience</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 {/* Mobile timeline (zigzag alternating left/right) */}
                 <div className="md:hidden relative">
@@ -463,7 +467,7 @@ export default function Home() {
                             <div className={`absolute top-4 ${isLeft ? "-left-4" : "-right-4"} flex h-8 w-8 items-center justify-center rounded-full border-2 border-cyan-500 bg-black shadow-lg shadow-cyan-500/20 z-20`}>
                               <span className="h-3 w-3 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500"></span>
                             </div>
-                            <Card className={`bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all group ${isLeft ? "ml-6" : "mr-6"}`}>
+                            <Card className={`bg-card border-border hover:border-cyan-500/40 transition-colors group ${isLeft ? "ml-6" : "mr-6"}`}>
                               <CardContent className="p-5">
                                 <h3 className="text-lg font-semibold group-hover:text-cyan-400 transition-colors">{job.role}</h3>
                                 <p className="text-cyan-400 font-medium text-sm">{job.company}</p>
@@ -498,14 +502,14 @@ export default function Home() {
 
                         {/* Content card */}
                         <div className={`w-[45%] ${index % 2 === 0 ? "pr-8" : "pl-8"}`}>
-                          <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all group">
+                          <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors group">
                             <CardContent className="p-6">
                               <div className="flex items-start justify-between mb-2">
                                 <h3 className="text-xl font-semibold group-hover:text-cyan-400 transition-colors">{job.role}</h3>
                               </div>
                               <p className="text-cyan-400 font-medium">{job.company}</p>
                               <p className="text-sm text-muted-foreground mb-1">{job.location}</p>
-                              <p className="text-sm text-purple-400 mb-4">{job.period}</p>
+                              <p className="text-sm text-muted-foreground mb-4">{job.period}</p>
                               <ul className="space-y-2">
                                 {job.responsibilities.map((responsibility, i) => (
                                   <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -535,8 +539,8 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-5xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">Technical Skills</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">Technical Skills</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 <div className="grid gap-6 md:grid-cols-2">
                   {skillCategories.map((category, index) => (
@@ -547,17 +551,17 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all h-full group">
+                      <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors h-full group">
                         <CardContent className="p-6">
                           <div className="flex items-center gap-3 mb-4">
-                            <div className="p-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-purple-600/20 group-hover:from-cyan-500/30 group-hover:to-purple-600/30 transition-all">
-                              <category.icon className="h-5 w-5 text-cyan-400" />
+                            <div className="p-2 rounded-lg bg-secondary">
+                              <category.icon className="h-4 w-4 text-cyan-400" />
                             </div>
-                            <h3 className="text-lg font-semibold">{category.title}</h3>
+                            <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">{category.title}</h3>
                           </div>
                           <div className="flex flex-wrap gap-2">
                             {category.skills.map((skill) => (
-                              <Badge key={skill} variant="secondary" className="bg-white/5 hover:bg-cyan-500/20 transition-colors">
+                              <Badge key={skill} variant="secondary" className="bg-secondary hover:bg-cyan-500/15 hover:text-cyan-300 transition-colors text-xs">
                                 {skill}
                               </Badge>
                             ))}
@@ -567,20 +571,6 @@ export default function Home() {
                     </motion.div>
                   ))}
                 </div>
-
-                {/* Programming Languages */}
-                <Card className="mt-8 bg-black/50 backdrop-blur-xl border-white/10">
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-4">Programming & IaC</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {["Python", "Java", "C#", "SQL", "Terraform (basic)"].map((skill) => (
-                        <Badge key={skill} className="bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border-cyan-500/30">
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
               </motion.div>
             </div>
           </section>
@@ -595,8 +585,8 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-5xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">Courses & Certifications</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">Courses &amp; Certifications</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {achievements.map((achievement, index) => (
@@ -607,26 +597,21 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Card className={`bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all h-full ${achievement.inProgress ? 'border-purple-500/30' : ''}`}>
+                      <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors h-full">
                         <CardContent className="p-6">
-                          <div className="flex items-start justify-between mb-2">
-                            <div className={`p-2 rounded-lg ${achievement.type === 'certification' ? 'bg-cyan-500/20' : achievement.type === 'course' ? 'bg-purple-500/20' : 'bg-yellow-500/20'}`}>
+                          <div className="flex items-start justify-between mb-3">
+                            <div className="p-2 rounded-lg bg-secondary">
                               {achievement.type === 'certification' ? (
-                                <Award className="h-5 w-5 text-cyan-400" />
+                                <Award className="h-4 w-4 text-cyan-400" />
                               ) : (
-                                <BookOpen className="h-5 w-5 text-purple-400" />
+                                <BookOpen className="h-4 w-4 text-muted-foreground" />
                               )}
                             </div>
-                            {achievement.inProgress && (
-                              <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 text-xs">
-                                In Progress
-                              </Badge>
-                            )}
+                            <span className="text-xs text-muted-foreground">{achievement.date}</span>
                           </div>
-                          <h3 className="font-semibold mt-3 mb-1">{achievement.title}</h3>
-                          <p className="text-sm text-cyan-400">{achievement.issuer}</p>
-                          <p className="text-xs text-muted-foreground mt-1">{achievement.date}</p>
-                          <p className="text-sm text-muted-foreground mt-3">{achievement.description}</p>
+                          <h3 className="font-semibold mb-1 leading-snug">{achievement.title}</h3>
+                          <p className="text-xs text-cyan-400 mb-3">{achievement.issuer}</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{achievement.description}</p>
                         </CardContent>
                       </Card>
                     </motion.div>
@@ -646,8 +631,8 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-6xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">Featured Projects</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">Featured Projects</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 <div className="grid gap-8">
                   {projects.map((project, index) => (
@@ -658,7 +643,7 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <Card className="bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all overflow-hidden group">
+                      <Card className="bg-card border-border hover:border-cyan-500/40 transition-colors overflow-hidden group">
                         <CardContent className="p-0">
                           <div className={`grid ${project.featured && project.images.length > 0 ? 'lg:grid-cols-2' : ''}`}>
                             {/* Image Carousel or Icon Placeholder */}
@@ -672,12 +657,12 @@ export default function Home() {
                                 />
                               </div>
                             ) : (
-                              <div className="p-6 flex items-center justify-center min-h-[200px] bg-gradient-to-br from-cyan-500/5 to-purple-600/5">
+                              <div className="p-6 flex items-center justify-center min-h-[200px] bg-secondary/30 border-r border-border">
                                 <div className="text-center">
-                                  <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border border-white/10">
-                                    <Terminal className="h-8 w-8 text-cyan-400" />
+                                  <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-secondary border border-border">
+                                    <Terminal className="h-6 w-6 text-cyan-400" />
                                   </div>
-                                  <p className="text-xs text-muted-foreground">Learning / Sandbox Project</p>
+                                  <p className="text-xs text-muted-foreground">Infrastructure / Sandbox</p>
                                 </div>
                               </div>
                             )}
@@ -750,29 +735,29 @@ export default function Home() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="mx-auto max-w-4xl"
               >
-                <h2 className="mb-4 text-3xl font-bold text-center">Get In Touch</h2>
-                <div className="mb-12 h-1 w-20 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+                <h2 className="mb-4 text-3xl font-bold text-center tracking-tight">Get In Touch</h2>
+                <div className="mb-12 h-px w-16 bg-cyan-500 mx-auto opacity-60"></div>
 
                 <div className="grid gap-8 md:grid-cols-2">
-                  <Card className="bg-black/50 backdrop-blur-xl border-white/10">
+                  <Card className="bg-card border-border">
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-6">Contact Information</h3>
+                      <h3 className="text-sm font-semibold mb-6 text-cyan-400 uppercase tracking-widest">Contact Information</h3>
                       <div className="space-y-4">
                         <a href="mailto:ghenea.andrew@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-cyan-400 transition-colors">
-                          <div className="p-2 rounded-lg bg-cyan-500/20">
-                            <Mail className="h-5 w-5 text-cyan-400" />
+                          <div className="p-2 rounded-lg bg-secondary">
+                            <Mail className="h-4 w-4 text-cyan-400" />
                           </div>
                           <span>ghenea.andrew@gmail.com</span>
                         </a>
-                        <a href="tel:+393247908209" className="flex items-center gap-3 text-muted-foreground hover:text-cyan-400 transition-colors">
-                          <div className="p-2 rounded-lg bg-cyan-500/20">
-                            <Phone className="h-5 w-5 text-cyan-400" />
+                        <a href="https://t.me/AndreiJT" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-cyan-400 transition-colors">
+                          <div className="p-2 rounded-lg bg-secondary">
+                            <Phone className="h-4 w-4 text-cyan-400" />
                           </div>
                           <span>Telegram @AndreiJT</span>
                         </a>
                         <div className="flex items-center gap-3 text-muted-foreground">
-                          <div className="p-2 rounded-lg bg-cyan-500/20">
-                            <MapPin className="h-5 w-5 text-cyan-400" />
+                          <div className="p-2 rounded-lg bg-secondary">
+                            <MapPin className="h-4 w-4 text-cyan-400" />
                           </div>
                           <span>Verona, Italy</span>
                         </div>
@@ -796,9 +781,9 @@ export default function Home() {
                     </CardContent>
                   </Card>
 
-                  <Card className="bg-black/50 backdrop-blur-xl border-white/10">
+                  <Card className="bg-card border-border">
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-6">Send a Message</h3>
+                      <h3 className="text-sm font-semibold mb-6 text-cyan-400 uppercase tracking-widest">Send a Message</h3>
                       <ContactForm />
                     </CardContent>
                   </Card>

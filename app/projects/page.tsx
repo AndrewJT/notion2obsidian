@@ -12,6 +12,26 @@ import { ImageCarousel } from "@/components/image-carousel"
 
 const projects = [
   {
+    title: "AWS Infrastructure Lab",
+    slug: "aws-lab",
+    description:
+      "Modular Terraform architecture for a highly available web application on AWS — VPC networking, EC2 provisioning with auto-scaling, RDS Multi-AZ, S3 lifecycle policies, and least-privilege IAM role management.",
+    images: [],
+    tags: ["AWS", "Terraform", "VPC", "EC2", "RDS", "IAM", "S3"],
+    liveUrl: null,
+    isLocalApp: false,
+  },
+  {
+    title: "CI/CD Pipeline Sandbox",
+    slug: "cicd-sandbox",
+    description:
+      "End-to-end CI/CD pipeline built with GitHub Actions that automates testing, builds and pushes container images, and deploys to a local Kubernetes cluster (K3s) with automated security scanning and health checks.",
+    images: [],
+    tags: ["Docker", "GitHub Actions", "Kubernetes", "K3s", "CI/CD", "Bash", "Trivy"],
+    liveUrl: null,
+    isLocalApp: false,
+  },
+  {
     title: "NetConnect Pro Console",
     slug: "netconnect-pro",
     description:
@@ -53,26 +73,6 @@ const projects = [
     liveUrl: "https://minesweeper.tapya.xyz",
     isLocalApp: false,
   },
-  {
-    title: "AWS Infrastructure Lab",
-    slug: "aws-lab",
-    description:
-      "Personal lab environment for practicing AWS services: VPC networking, EC2 provisioning, RDS setup, S3 lifecycle policies, and IAM role management using Terraform.",
-    images: [],
-    tags: ["AWS", "Terraform", "VPC", "EC2", "RDS", "IAM"],
-    liveUrl: null,
-    isLocalApp: false,
-  },
-  {
-    title: "CI/CD Pipeline Sandbox",
-    slug: "cicd-sandbox",
-    description:
-      "Docker-based CI/CD pipeline using GitHub Actions for automated testing, building container images, and deploying to a staging environment with health checks.",
-    images: [],
-    tags: ["Docker", "GitHub Actions", "CI/CD", "Bash", "Nginx"],
-    liveUrl: null,
-    isLocalApp: false,
-  },
 ]
 
 export default function ProjectsPage() {
@@ -109,7 +109,7 @@ export default function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
             >
-              <Card className="overflow-hidden bg-black/50 backdrop-blur-xl border-white/10 hover:border-cyan-500/30 transition-all group">
+              <Card className="overflow-hidden bg-card border-border hover:border-cyan-500/40 transition-colors group">
                 <CardContent className="p-0">
                   <div className={`grid ${project.images.length > 0 ? 'lg:grid-cols-2' : ''}`}>
                     {project.images.length > 0 ? (
@@ -122,12 +122,12 @@ export default function ProjectsPage() {
                         />
                       </div>
                     ) : (
-                      <div className="p-6 flex items-center justify-center min-h-[200px] bg-gradient-to-br from-cyan-500/5 to-purple-600/5">
+                      <div className="p-6 flex items-center justify-center min-h-[200px] bg-secondary/30 border-r border-border">
                         <div className="text-center">
-                          <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border border-white/10">
-                            <Terminal className="h-8 w-8 text-cyan-400" />
+                          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-secondary border border-border">
+                            <Terminal className="h-6 w-6 text-cyan-400" />
                           </div>
-                          <p className="text-xs text-muted-foreground">Learning / Sandbox Project</p>
+                          <p className="text-xs text-muted-foreground">Infrastructure / Sandbox</p>
                         </div>
                       </div>
                     )}
