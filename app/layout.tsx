@@ -17,6 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        {/* Cloudflare Web Analytics */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "024be93e9e6049138942cd19176f24ca"}'
+        />
+        {/* End Cloudflare Web Analytics */}
+      </head>
       <body className={`${inter.className} bg-black text-white`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
